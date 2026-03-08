@@ -24,10 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+
+        <nav style={{padding:"20px", background:"#eee"}}>
+          {/* <a href="/">Home</a> | 
+          <a href="/login">Login</a> */}
+        </nav>
+
         {children}
+
       </body>
     </html>
   );
